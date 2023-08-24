@@ -45,6 +45,8 @@ function operate(numOne, operator, numTwo) {
     return multiply(numOne, numTwo);
   } else if (operator === '/') {
     return divide(numOne, numTwo)
+  } else if (operator === '%') {
+    return percentage(numOne, operator, numTwo)
   } else {
     return 'ERROR!'
   }
